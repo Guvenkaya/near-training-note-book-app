@@ -130,7 +130,7 @@ impl Contract {
             Some(env::attached_deposit().as_yoctonear()),
             next_entry_id,
         );
-
+    }
 
     // pub fn add_note_collection(&mut self, title: String, body: String) {
     //     let account_id = env::predecessor_account_id();

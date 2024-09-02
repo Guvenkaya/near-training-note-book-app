@@ -229,6 +229,8 @@ async fn add_note() -> color_eyre::Result<()> {
         .await?
         .into_result()?;
 
+    println!("LOGS: {:#?}", res.logs());
+
     assert!(res
         .logs()
         .iter()
