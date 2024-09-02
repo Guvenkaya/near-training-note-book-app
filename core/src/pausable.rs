@@ -18,15 +18,15 @@ pub trait Pausable {
 
 #[near]
 impl Pausable for Contract {
-    pub fn toggle_pause(&mut self) {
+    fn toggle_pause(&mut self) {
         todo!("Implement toggle_paus")
     }
 
-    pub fn is_paused(&self) -> bool {
+    fn is_paused(&self) -> bool {
         todo!("Implement is_paused")
     }
 
-    pub(crate) fn assert_not_paused(&self) {
+    fn assert_not_paused(&self) {
         todo!("Implement assert_not_paused")
     }
 }

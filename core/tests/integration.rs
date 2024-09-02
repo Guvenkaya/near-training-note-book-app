@@ -164,7 +164,6 @@ async fn contract_is_operational() -> color_eyre::Result<()> {
         .transact()
         .await?;
 
-    println!("OUTCOME: {outcome:#?}");
     assert!(outcome.is_success());
 
     let user_message_outcome = note_book_contract
