@@ -2,6 +2,7 @@ mod exchange;
 mod ft_receiver;
 mod migration;
 mod ownership;
+mod pausable;
 
 use std::u32;
 
